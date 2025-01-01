@@ -86,7 +86,7 @@ Contributions are welcome! If you'd like to contribute to **BookBot**, please fo
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE]() file for more details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/mohamedaqlil/bookbot/blob/main/LICENSE.md) file for more details.
 
 ---
 
