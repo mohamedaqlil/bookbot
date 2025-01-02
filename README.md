@@ -69,10 +69,10 @@ To set up **BookBot** locally, follow these steps:
 To run the application, execute the following command in your terminal:
 
 ```bash
-python3 bookbot.py <path-to-text-file>
+python3 main.py <path-to-text-file>
 ```
 
-Replace `<path-to-text-file>` with the path of the text file (e.g., "frankenstein.txt") you want to analyze.
+Replace `<path-to-text-file>` with the path of the text file (e.g., "books/frankenstein.txt") you want to analyze.
 
 ## Contributing
 

@@ -1,6 +1,17 @@
+import sys
+
 def main():
-    book_path = "books/frankenstein.txt"
-    text = get_book_text(book_path)
+    if len(sys.argv) < 2:
+        print("Usage: python3 main.py <book_path>")
+        return
+
+    book_path = sys.argv[1]
+    try:
+        text = get_book_text(book_path)
+    except FileNotFoundError:
+        print(f"Error: File '{book_path}' not found.")
+        return
+    #book_path = "books/frankenstein.txt"
     counter = count_words(text)
     counters = get_count_characters(text)
     char_list = []
@@ -17,7 +28,7 @@ def main():
     print("--- End report ---")
 
 def get_book_text(path):
-    with open(path) as f:
+    with open(path, 'r', encoding='utf-8') as f:
         return f.read()
 
 
